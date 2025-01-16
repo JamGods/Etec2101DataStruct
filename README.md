@@ -1,2 +1,2 @@
 # Etec2101DataStruct
-For Data-Structures Jason Witherell class
+Project for Data-Structures Jason Witherell class
