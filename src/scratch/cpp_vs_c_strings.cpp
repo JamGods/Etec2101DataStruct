@@ -1,5 +1,4 @@
 #include <iostream>
-#include <person.h>
 #include <string> // <string.h> is the C string library not this
 using namespace std; //Makes the std optional, however might make reading code a little difficult if you weren't the one who wrote it
 int main()
@@ -28,11 +27,4 @@ int main()
     if (cpp_string > "moo") // this calls strcmp for you
         std::cout << cpp_string << " comes after \"moo\"\n";
     c_string2 = cpp_string.c_str(); //getting thie underlying c string.. so we can use all our c functions.
-
-    Person p;
-    p.id = 42;
-    p.first_name = "Bob";
-    Person q;
-    q.id = 43;
-    q.first_name = "Sally";
 }
