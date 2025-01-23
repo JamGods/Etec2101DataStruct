@@ -1,2 +1,2 @@
-# Etec2101DataStruct
-Project for Data-Structures Jason Witherell class
+# etec2101_02
+This is my ETEC2101 (section02) data structures solution project.

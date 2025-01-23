@@ -20,10 +20,10 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\src\scratch\oop_example.cpp">
+    <ClCompile Include="..\..\src\examples\person.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\src\scratch\Person.cpp">
+    <ClCompile Include="..\..\src\scratch\stream_example.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
