@@ -1,3 +1,0 @@
-This is a line
-x = 99
-And we're done!

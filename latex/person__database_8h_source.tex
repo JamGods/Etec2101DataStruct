@@ -1,0 +1,31 @@
+\doxysection{person\+\_\+database.\+h}
+\hypertarget{person__database_8h_source}{}\label{person__database_8h_source}\index{include/person\_database.h@{include/person\_database.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ <person.h>}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{keyword}{namespace\ }example\ \{}
+\DoxyCodeLine{00006\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{classexample_1_1_person_database_ab7b11bb5300b0f4a332083e9c4ac993c}{PersonDatabase}}\ \{}
+\DoxyCodeLine{00007\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00008\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classexample_1_1_person}{Person}}*\ people;\ \textcolor{comment}{//\ "{}Dyanamic"{}\ array\ of\ person\ objects-\/-\/Do\ not\ forget\ this\ thats\ why\ you\ added\ a\ comment}}
+\DoxyCodeLine{00009\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ num\_people;\ \textcolor{comment}{//\ another\ important\ one\ this\ shows\ the\ current\ number\ of\ peeps\ in\ the\ base}}
+\DoxyCodeLine{00010\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ capacity;\ \ \ \textcolor{comment}{//\ this\ shows\ the\ maximum\ number\ of\ people\ you\ can\ fit\ in\ the\ array}}
+\DoxyCodeLine{00011\ \ \ \ \ \ \ \ \ std::string\ tempfilename;\ \textcolor{comment}{//this\ is\ the\ file\ used\ for\ saving/loading\ database\ info\ or\ it\ will\ be\ lol}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ resize\_array();\ \textcolor{comment}{//this\ is\ the\ method\ I've\ decided\ will\ help\ resize\ the\ array\ creative\ name\ I\ know}}
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classexample_1_1_person_database_ab7b11bb5300b0f4a332083e9c4ac993c}{PersonDatabase}}(\textcolor{keyword}{const}\ std::string\&\ tempfilename);\ \textcolor{comment}{//\ a\ constructor\ oh\ boy}}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classexample_1_1_person_database_ab7b11bb5300b0f4a332083e9c4ac993c}{\string~PersonDatabase}}();\ \textcolor{comment}{//\ a\ deconstructor\ even\ crazier\ wowza}}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \textcolor{comment}{//here\ come\ all\ the\ fun\ functions\ we\ need\ :D}}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ add\_person(\textcolor{keyword}{const}\ \mbox{\hyperlink{classexample_1_1_person}{Person}}\&\ person);\ \ \ \ \ \ \ \textcolor{comment}{//\ Add\ a\ person\ very\ succint\ naming\ scheme\ I\ know\ compliments\ to\ the\ chef\ or\ coder\ ig(thats\ actually\ me\ haha)}}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ remove\_person(\textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id});\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Remove\ a\ person\ by\ ID,\ while\ you\ could\ remove\ someone\ by\ name\ that\ would\ cause\ some\ issues\ would\ it\ not}}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//in\ fact\ imagine\ calling\ them\ by\ their\ age\ that\ would\ be\ funny}}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ get\_num\_people()\ \textcolor{keyword}{const};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Get\ the\ number\ of\ people,\ shrimple\ little\ function\ not\ hard\ at\ all}}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ std::string\ to\_string()\ \textcolor{keyword}{const};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Get\ a\ string\ representation,\ this\ one\ will\ be\ much\ harder\ to\ figure\ out,\ can't\ wait\ to\ work\ on\ the\ cpp\ file}}
+\DoxyCodeLine{00028\ \ \ \ \ \};}
+\DoxyCodeLine{00029\ \}}
+
+\end{DoxyCode}

@@ -4,15 +4,15 @@
 
 void func()
 {
-	Person a(45, "Sally", "Smith");
+	example::Person a(45, "Sally", "Smith");
 	std::cout << "Doing something...\n";
 }
 
 int main(int argc, char** argv)
 {
-	// Making two instances (or object) of the Person class
-	Person p(42, "Bob", "Jones");		// using the "real" constructor
-	Person q;							// using the default constructor
+	// Making two instances (or object) of the example::Person class
+	example::Person p(42, "Bob", "Jones");		// using the "real" constructor
+	example::Person q;							// using the default constructor
 
 	//p.id = 42;
 	//p.hours_worked = 17;
@@ -22,22 +22,22 @@ int main(int argc, char** argv)
 
 	func();
 
-	Person* pptr;                      // Declaring a pointer to a Person (NOT A PERSON!!!)
+	example::Person* pptr;                      // Declaring a pointer to a example::Person (NOT A example::Person!!!)
 									   //    uninitialized at the moment;
 	pptr = NULL;				// NULL is a macro (the value 0)
 	int x = NULL;               // Assigning the VALUE 0 to x (x is NOT a pointer)
 	pptr = nullptr;				// Like NULL but can only be assigned to pointer types
 	//x = nullptr;				// Error because x is not a pointer
 
-	pptr = new Person(46, "Jim", "Price");   // new is like malloc in that it dynamically allocates
-											 // memory from the HEAP.  Returns a pointer to a Person.
+	pptr = new example::Person(46, "Jim", "Price");   // new is like malloc in that it dynamically allocates
+											 // memory from the HEAP.  Returns a pointer to a example::Person.
 											 // malloc doesn't do anything with constructors or destructors
 	
 	// Examples of DE-REFERENCING the pointer
 	pptr->set_hourly_rate(11.3f);
 	(*pptr).set_hourly_rate(11.3f);			// Same as line before.
-	std::cout << "Doing some more stuff with the Person pointed to by pptr\n";
-	// Free up that Person object
+	std::cout << "Doing some more stuff with the example::Person pointed to by pptr\n";
+	// Free up that example::Person object
 	delete pptr;							// Freeing the memory pointed to by pptr.  pptr's still 
 											//   holding the same address (DANGLING-POINTER) -- don't 
 											//   use that address or bad things will happen.  Calling
@@ -45,8 +45,8 @@ int main(int argc, char** argv)
 											//   the memory is freed up.
 	pptr = nullptr;
 
-	// Make a new person using pptr
-	pptr = new Person(47, "Julia", "Young");
+	// Make a new example::Person using pptr
+	pptr = new example::Person(47, "Julia", "Young");
 	pptr->set_hourly_rate(14.5f);
 	delete pptr;							// This calls the Destructor, then frees up this chunk
 											//   of memory pointed to by pptr.

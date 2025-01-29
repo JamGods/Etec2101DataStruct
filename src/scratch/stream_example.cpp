@@ -58,7 +58,7 @@ int main(int argc, char** argv)
 		return 1;
 	}
 
-	std::string temp_line;
+	/*std::string temp_line;
 	std::getline(fp, temp_line);
 	std::cout << "Line0=" << temp_line << "\n";
 
@@ -70,7 +70,27 @@ int main(int argc, char** argv)
 	std::cout << "got x's value of " << real_x << "\n";
 
 	std::getline(fp, temp_line);
-	std::cout << "Line2=" << temp_line << "\n";
+	std::cout << "Line2=" << temp_line << "\n";*/
+
+	//Read in all data from the file
+	int new_id;
+	float new_rate;
+	unsigned int new_hours;
+	std::string new_fname, new_lname;
+	while (true)
+	{
+		// When we test for "end of file" technically we only try to read past the end of the file
+		// So generally, you'll read a bit and then realize that we are now past the end of the file
+		fp >> new_id >> new_fname >> new_lname >> new_rate >> new_hours;
+		if (fp.eof())
+			break;
+		else if (fp.fail())
+			std::cout << "Error reading in data\n";
+		// Do something with that data
+		std::cout << "Got Person\n\tid=" << new_id << "\n\tfname=" << new_fname;
+		std::cout << "\n\tlname=" << new_lname << "\n\trate=" << new_rate << "\n\thours=";
+		std::cout << new_hours << "\n";
+	}
 
 	fp.close();
 #endif
