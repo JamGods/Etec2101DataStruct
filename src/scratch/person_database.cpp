@@ -4,6 +4,7 @@
 #include <sstream>
 #include <stdexcept>
 #include <iomanip>
+//this line allows me to not type example:: every single time
 using namespace example;
 
 // the constructor just learned about this guy

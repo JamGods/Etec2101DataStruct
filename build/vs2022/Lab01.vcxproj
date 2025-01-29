@@ -17,7 +17,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\include\examples\person.h" />
-    <ClInclude Include="..\..\include\person_database.h" />
+    <ClInclude Include="..\..\include\examples\person_database.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
