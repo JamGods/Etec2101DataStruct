@@ -1,4 +1,4 @@
 .vs
-temp/*
-latex/*
-html/*
+temp/
+latex/
+html/
