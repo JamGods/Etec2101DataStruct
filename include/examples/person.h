@@ -35,7 +35,10 @@ namespace example
         /// <summary>Deconstructor</summary>
         ~Person();
         // This is a METHOD -- a function that all instances of the class can
-        // use. This is a DECLARATION.  
+        // use. This is a DECLARATION.
+        /// <summary>
+        /// This calculates the pay.
+        /// </summary>
         float calculate_pay();
         // These are examples of SETTERS
         /// <summary>
