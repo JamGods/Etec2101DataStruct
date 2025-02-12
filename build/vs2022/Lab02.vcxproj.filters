@@ -18,10 +18,10 @@
     <ClCompile Include="..\..\src\examples\person.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\src\Lab01_main.cpp">
+    <ClCompile Include="..\..\src\examples\person_database.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\src\examples\person_database.cpp">
+    <ClCompile Include="..\..\src\Lab02_main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -30,6 +30,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="..\..\include\examples\person_database.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\examples\array_list.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

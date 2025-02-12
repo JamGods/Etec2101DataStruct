@@ -79,5 +79,5 @@ example::Person::Person(int start_id, std::string start_fname, std::string start
 
 example::Person::~Person()
 {
-	std::cout << "The person named " << first_name << " " << last_name << " is about to go away.\n";
+	return;
 }

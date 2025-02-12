@@ -4,31 +4,39 @@
 #include <sstream>
 #include <stdexcept>
 #include <iomanip>
-//this line allows me to not type example:: every single time
 using namespace example;
-
-// the constructor just learned about this guy
+// Constructor - Load database from file
 PersonDatabase::PersonDatabase(const std::string& tempfilename)
     : people(nullptr), num_people(0), capacity(0), tempfilename(tempfilename) {
-    std::ifstream file("..\\..\\media\\tempfilename.txt");
+    std::ifstream file(tempfilename); // Use the correct filename
     if (file.is_open()) {
         std::string line;
         while (std::getline(file, line)) {
             std::istringstream iss(line);
             int id;
             std::string first_name, last_name;
-            iss >> id >> first_name >> last_name;
-            add_person(Person(id, first_name, last_name));
+            float hourly_rate;
+            unsigned int hours_worked;
+            if (iss >> id >> first_name >> last_name >> hourly_rate >> hours_worked) {
+                Person person(id, first_name, last_name);
+                person.set_hourly_rate(hourly_rate);
+                person.set_hours_worked(hours_worked);
+                add_person(person);
+            }
         }
         file.close();
     }
 }
-//now onto the deconstructor :D
+// Destructor - Save database to file
 PersonDatabase::~PersonDatabase() {
     std::ofstream file(tempfilename);
     if (file.is_open()) {
         for (int i = 0; i < num_people; ++i) {
-            file << people[i]->get_id() << " " << people[i]->get_first_name() << " " << people[i]->get_last_name() << "\n";
+            file << people[i]->get_id() << " "
+                << people[i]->get_first_name() << " "
+                << people[i]->get_last_name() << " "
+                << people[i]->get_hourly_rate() << " "
+                << people[i]->get_hours_worked() << "\n";
         }
         file.close();
     }
