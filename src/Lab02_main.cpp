@@ -1,9 +1,9 @@
 #include <iostream>
-#include "array_list.h"
+#include <array_list.h>
 
 int main() {
     ssuds::ArrayList<float> float_list;
-
+    //The Jason approved testing visuals :D
     std::cout << "=== Test 1: Append ===\n";
     float_list.append(2.1f);
     float_list.append(3.6f);

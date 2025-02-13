@@ -109,7 +109,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>..\..\include;..\..\include\examples;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\include;..\..\include\examples;..\..\include\ssuds;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -138,9 +138,9 @@
     <ClCompile Include="..\..\src\Lab02_main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\include\examples\array_list.h" />
     <ClInclude Include="..\..\include\examples\person.h" />
     <ClInclude Include="..\..\include\examples\person_database.h" />
+    <ClInclude Include="..\..\include\ssuds\array_list.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
