@@ -116,7 +116,7 @@ namespace ssuds {
         /// <summary>
         /// Destructor to clean up allocated memory.
         /// </summary>
-        ~ArrayList() { delete[] data; }
+        ~ArrayList() {/*delete[] data;*/ }
 
         ArrayList& operator=(const ArrayList& other) {
             if (this == &other) return *this;
