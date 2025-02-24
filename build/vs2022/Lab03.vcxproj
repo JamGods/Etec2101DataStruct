@@ -10,11 +10,17 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\Lab03_main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\include\ssuds\array_list.h" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{960809fb-fe08-4464-9629-128573960f2b}</ProjectGuid>
-    <RootNamespace>Lab02</RootNamespace>
+    <ProjectGuid>{dac9e06a-e797-4409-95ab-907410bf8d8e}</ProjectGuid>
+    <RootNamespace>Lab03</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -77,16 +83,6 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="..\..\src\examples\person.cpp" />
-    <ClCompile Include="..\..\src\examples\person_database.cpp" />
-    <ClCompile Include="..\..\src\Lab02_main.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="..\..\include\examples\person.h" />
-    <ClInclude Include="..\..\include\examples\person_database.h" />
-    <ClInclude Include="..\..\include\ssuds\array_list.h" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
