@@ -2,7 +2,7 @@
 #include <array_list.h>
 
 int main() {
-    ssuds::ArrayList<float> float_list;
+    /*ssuds::ArrayList<float> float_list;
     //The Jason approved testing visuals :D
     std::cout << "=== Test 1: Append ===\n";
     float_list.append(2.1f);
@@ -45,4 +45,5 @@ int main() {
     std::cout << "Capacity after reserve(20): " << float_list.capacity() << "\n\n";
 
     return 0;
+*/
 }
