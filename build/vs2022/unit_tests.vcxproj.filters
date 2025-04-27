@@ -36,6 +36,9 @@
     <ClCompile Include="..\..\src\linked_list_tests.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\src\ordered_set_tests.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="..\..\.gitignore" />
@@ -54,6 +57,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="..\..\include\ssuds\linked_list.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\ssuds\ordered_set.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
