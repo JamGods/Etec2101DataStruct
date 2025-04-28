@@ -25,6 +25,7 @@
     <ClCompile Include="..\..\src\examples\person.cpp" />
     <ClCompile Include="..\..\src\examples\person_database.cpp" />
     <ClCompile Include="..\..\src\linked_list_tests.cpp" />
+    <ClCompile Include="..\..\src\map_tests.cpp" />
     <ClCompile Include="..\..\src\ordered_set_tests.cpp" />
     <ClCompile Include="..\..\src\ssuds_tests_main.cpp" />
   </ItemGroup>
@@ -37,6 +38,7 @@
     <ClInclude Include="..\..\include\ssuds\array_list.h" />
     <ClInclude Include="..\..\include\ssuds\array_list_utility.h" />
     <ClInclude Include="..\..\include\ssuds\linked_list.h" />
+    <ClInclude Include="..\..\include\ssuds\map.h" />
     <ClInclude Include="..\..\include\ssuds\ordered_set.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
